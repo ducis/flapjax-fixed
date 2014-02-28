@@ -1,0 +1,249 @@
+<html>
+  
+  <head>
+    <script lang="text/javascript" src="file:///root/.cabal/share/Flapjax-2.5/flapjax.js">
+    </script>
+    <script lang="text/javascript">
+      var fxcode = [];
+    </script>
+    
+    <title>
+      Catch Up
+    </title>
+    
+    <link rel="stylesheet" href="/demo.css">
+    </link>
+    
+    <script type="text/javascript" lang="">
+      var toInt = function (v,def)
+                  {
+                    try
+                    {
+                      return parseInt(v);
+                    }
+                    catch (_) {
+                                return def;
+                              };
+                  };
+    </script>
+    
+    <script type="text/javascript" lang="">
+      function fxcode0()
+      {
+        DIAM1 = 100;
+        DIAM2 = 220;
+        OFFSET2 = 23;
+        SPEED = 1000;
+        timeB = timerB(compilerCall(compilerUnbehavior(toInt),
+                                    extractValueB("frameRate"),
+                                    50));
+        delayTimeB = compilerCall(compilerUnbehavior(toInt),
+                                  extractValueB("delayRate"),
+                                  500);
+        insertDomB(DIV({id: "catch", style: {backgroundColor: "#000000", color: "#FFFFFF", fontSize: "3em", position: "absolute", padding: "5px", left: compilerLift(function (arg0,
+                                                                                                                                                                               arg1)
+                                                                                                                                                                     {
+                                                                                                                                                                       return arg0 + arg1
+                                                                                                                                                                     },
+                                                                                                                                                                     mouseLeftB(compilerUnbehavior(document)),
+                                                                                                                                                                     compilerLift(function (arg0,
+                                                                                                                                                                                            arg1)
+                                                                                                                                                                                  {
+                                                                                                                                                                                    return arg0.round(arg1)
+                                                                                                                                                                                  },
+                                                                                                                                                                                  compilerUnbehavior(Math),
+                                                                                                                                                                                  compilerLift(function (arg0,
+                                                                                                                                                                                                         arg1)
+                                                                                                                                                                                               {
+                                                                                                                                                                                                 return arg0 * arg1
+                                                                                                                                                                                               },
+                                                                                                                                                                                               DIAM1,
+                                                                                                                                                                                               compilerLift(function (arg0,
+                                                                                                                                                                                                                      arg1)
+                                                                                                                                                                                                            {
+                                                                                                                                                                                                              return arg0.cos(arg1)
+                                                                                                                                                                                                            },
+                                                                                                                                                                                                            compilerUnbehavior(Math),
+                                                                                                                                                                                                            compilerLift(function (arg0,
+                                                                                                                                                                                                                                   arg1)
+                                                                                                                                                                                                                         {
+                                                                                                                                                                                                                           return arg0 / arg1
+                                                                                                                                                                                                                         },
+                                                                                                                                                                                                                         timeB,
+                                                                                                                                                                                                                         SPEED))))), top: compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                 arg1)
+                                                                                                                                                                                                                                                       {
+                                                                                                                                                                                                                                                         return arg0 + arg1
+                                                                                                                                                                                                                                                       },
+                                                                                                                                                                                                                                                       mouseTopB(compilerUnbehavior(document)),
+                                                                                                                                                                                                                                                       compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                              arg1)
+                                                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                                                      return arg0.round(arg1)
+                                                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                                                    compilerUnbehavior(Math),
+                                                                                                                                                                                                                                                                    compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                           arg1)
+                                                                                                                                                                                                                                                                                 {
+                                                                                                                                                                                                                                                                                   return arg0 * arg1
+                                                                                                                                                                                                                                                                                 },
+                                                                                                                                                                                                                                                                                 DIAM1,
+                                                                                                                                                                                                                                                                                 compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                        arg1)
+                                                                                                                                                                                                                                                                                              {
+                                                                                                                                                                                                                                                                                                return arg0.sin(arg1)
+                                                                                                                                                                                                                                                                                              },
+                                                                                                                                                                                                                                                                                              compilerUnbehavior(Math),
+                                                                                                                                                                                                                                                                                              compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                                     arg1)
+                                                                                                                                                                                                                                                                                                           {
+                                                                                                                                                                                                                                                                                                             return arg0 / arg1
+                                                                                                                                                                                                                                                                                                           },
+                                                                                                                                                                                                                                                                                                           timeB,
+                                                                                                                                                                                                                                                                                                           SPEED)))))}},
+                       "catch"),
+                   "body",
+                   "beginning");
+        upB = tagRec(["mouseover","mouseout"],
+                     function (mouseOverE,mouseOutE)
+                     {
+                       return DIV({id: "up", style: {padding: "5px", backgroundColor: mergeE(compilerEventStreamArg(mouseOverE.constantE(compilerEventStreamArg("#FF0000"))),
+                                                                                             compilerEventStreamArg(mouseOutE.constantE(compilerEventStreamArg("#000")))).startsWith("#000"), color: "#FFFFFF", fontSize: "3em", position: "absolute", left: compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                    arg1)
+                                                                                                                                                                                                                                                                          {
+                                                                                                                                                                                                                                                                            return arg0 + arg1
+                                                                                                                                                                                                                                                                          },
+                                                                                                                                                                                                                                                                          compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                 arg1)
+                                                                                                                                                                                                                                                                                       {
+                                                                                                                                                                                                                                                                                         return arg0 + arg1
+                                                                                                                                                                                                                                                                                       },
+                                                                                                                                                                                                                                                                                       OFFSET2,
+                                                                                                                                                                                                                                                                                       mouseLeftB(compilerUnbehavior(document)).delayB(delayTimeB)),
+                                                                                                                                                                                                                                                                          compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                 arg1)
+                                                                                                                                                                                                                                                                                       {
+                                                                                                                                                                                                                                                                                         return arg0.round(arg1)
+                                                                                                                                                                                                                                                                                       },
+                                                                                                                                                                                                                                                                                       compilerUnbehavior(Math),
+                                                                                                                                                                                                                                                                                       compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                              arg1)
+                                                                                                                                                                                                                                                                                                    {
+                                                                                                                                                                                                                                                                                                      return arg0 * arg1
+                                                                                                                                                                                                                                                                                                    },
+                                                                                                                                                                                                                                                                                                    DIAM2,
+                                                                                                                                                                                                                                                                                                    compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                                           arg1)
+                                                                                                                                                                                                                                                                                                                 {
+                                                                                                                                                                                                                                                                                                                   return arg0.cos(arg1)
+                                                                                                                                                                                                                                                                                                                 },
+                                                                                                                                                                                                                                                                                                                 compilerUnbehavior(Math),
+                                                                                                                                                                                                                                                                                                                 compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                                                        arg1)
+                                                                                                                                                                                                                                                                                                                              {
+                                                                                                                                                                                                                                                                                                                                return arg0 / arg1
+                                                                                                                                                                                                                                                                                                                              },
+                                                                                                                                                                                                                                                                                                                              timeB,
+                                                                                                                                                                                                                                                                                                                              SPEED))))), top: compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                                                                                      arg1)
+                                                                                                                                                                                                                                                                                                                                                            {
+                                                                                                                                                                                                                                                                                                                                                              return arg0 + arg1
+                                                                                                                                                                                                                                                                                                                                                            },
+                                                                                                                                                                                                                                                                                                                                                            mouseTopB(compilerUnbehavior(document)).delayB(delayTimeB),
+                                                                                                                                                                                                                                                                                                                                                            compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                                                                                                   arg1)
+                                                                                                                                                                                                                                                                                                                                                                         {
+                                                                                                                                                                                                                                                                                                                                                                           return arg0.round(arg1)
+                                                                                                                                                                                                                                                                                                                                                                         },
+                                                                                                                                                                                                                                                                                                                                                                         compilerUnbehavior(Math),
+                                                                                                                                                                                                                                                                                                                                                                         compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                                                                                                                arg1)
+                                                                                                                                                                                                                                                                                                                                                                                      {
+                                                                                                                                                                                                                                                                                                                                                                                        return arg0 * arg1
+                                                                                                                                                                                                                                                                                                                                                                                      },
+                                                                                                                                                                                                                                                                                                                                                                                      DIAM2,
+                                                                                                                                                                                                                                                                                                                                                                                      compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                                                                                                                             arg1)
+                                                                                                                                                                                                                                                                                                                                                                                                   {
+                                                                                                                                                                                                                                                                                                                                                                                                     return arg0.sin(arg1)
+                                                                                                                                                                                                                                                                                                                                                                                                   },
+                                                                                                                                                                                                                                                                                                                                                                                                   compilerUnbehavior(Math),
+                                                                                                                                                                                                                                                                                                                                                                                                   compilerLift(function (arg0,
+                                                                                                                                                                                                                                                                                                                                                                                                                          arg1)
+                                                                                                                                                                                                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                                                                                                                                                                                                  return arg0 / arg1
+                                                                                                                                                                                                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                                                                                                                                                                                                timeB,
+                                                                                                                                                                                                                                                                                                                                                                                                                SPEED)))))}},
+                                  "up");
+                     });
+        insertDomB(upB,"catch","before");
+        caughtUpB = extractEventE(compilerEventStreamArg(upB),
+                                  compilerEventStreamArg("mouseover")).collectE(compilerEventStreamArg(0),
+                                                                                compilerEventStreamArg(function (_,
+                                                                                                                 p)
+                                                                                                       {
+                                                                                                         return compilerLift(function (arg0,
+                                                                                                                                       arg1)
+                                                                                                                             {
+                                                                                                                               return arg0 + arg1
+                                                                                                                             },
+                                                                                                                             p,
+                                                                                                                             1);
+                                                                                                       })).startsWith(0);
+      }
+      fxcode.push(fxcode0)
+    </script>
+    
+  </head>
+  
+  <body id="body" style="text-align: center; margin: 0px; overflow: hidden;" onload="forEach(function(l){ l(); }, fxcode)">
+    
+    <div class="block">
+      
+      <div>
+        update every 
+        <input type="text" id="frameRate" value="10" size="5">
+        </input>
+        ms 
+with a delay of 
+        <input type="text" id="delayRate" value="800" size="5">
+        </input>
+        ms
+
+      </div>
+      
+      <div>
+        
+        <h1>
+          You caught up
+
+          <span style="color: white; background-color: black">
+            
+            <script lang="text/javascript" type="">
+              function fxcode1()
+              {
+                compilerInsertDomB(compilerLift(function (arg0)
+                                                {
+                                                  return arg0.toString()
+                                                },
+                                                caughtUpB),
+                                   "flapjaxsuid0");
+              }
+              fxcode.push(fxcode1)
+            </script><!--
+            --><span id="flapjaxsuid0">
+                 
+               </span>
+          </span>
+          &nbsp;times
+        </h1>
+        hit up with your mouse
+
+      </div>
+      
+    </div>
+    
+  </body>
+  
+</html>

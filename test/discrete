@@ -1,0 +1,26 @@
+<html>
+<head>
+<title></title>
+<script>
+var aaa=timerB(10);
+</script>
+</head>
+<body id="body" style="text-align: center; margin: 0px; overflow: hidden;">
+Text buffer: <input type="text" id="toLength"/>
+<p>
+length: {! startsWith(extractValueE('toLength').mapE( function(s){return s.length;}),-1) !}
+</p>
+<p>
+length: {! liftB(function(a){console.log('aaa');return a;}, startsWith(extractValueE('toLength'),-1)) !}
+</p>
+<p>
+length: {! extractValueB('toLength').length !}
+</p>
+<p>
+Length: {! extractValueE('toLength').mapE( function(s){return s.length;}) !}
+</p>
+<p>
+{!aaa!}
+</p>
+</body>
+</html>

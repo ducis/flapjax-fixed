@@ -1,0 +1,21 @@
+<html>
+<head>
+<title></title>
+<script>
+</script>
+</head>
+<body id="body" style="text-align: center; margin: 0px; overflow: hidden;">
+<div>
+3 char <input id="tf" style=''/>
+</div>
+<div>
+{!ifB(extractValueB('tf').length == 3, constantB('green'), constantB('red') )!}
+</div>
+<div>
+{!(extractValueB('tf').length == 3 ? constantB('green') : constantB('red') )!}
+</div>
+<div>
+{!(extractValueB('tf').length == 3 ? ('green') : ('red') )!}
+</div>
+</body>
+</html>

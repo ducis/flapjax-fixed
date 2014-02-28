@@ -1,7 +1,10 @@
 dist
 cabal-dev
+Setup.hs
 *.o
 *.hi
 *.chi
 *.chs.h
 .virthualenv
+*.swp
+bin

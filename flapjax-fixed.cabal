@@ -1,0 +1,100 @@
+Name:           flapjax-fixed
+Version:        0.1
+Cabal-Version:    >= 1.10
+Copyright:      Copyright (c) 2007-2009 Arjun Guha and Spiridon Eliopoulos
+License:        LGPL
+License-file:   LICENSE
+Author:         ducis
+Maintainer:     ducis_cn@126.com
+Stability:      provisional
+Category:       Language
+Synopsis:       Bundle of flapjax, jscc and webbits
+Data-Dir:       .
+Build-Type:     Simple
+Data-Files:
+  JsContracts-0.5.3/data/contracts.js,
+  flapjax/fx/flapjax.js,
+  flapjax/fx/flapjax.jsi
+Description:
+  x
+Library
+  default-language: Haskell98
+  Hs-Source-Dirs:
+    WebBits-1.0/src
+    WebBits-Html-1.0.2/src
+    JsContracts-0.5.3/src
+  Build-Depends:
+    base >= 4 && < 5,
+    mtl >= 1.1.0.1,
+    parsec < 3.0.0,
+    pretty >= 0.1,
+    containers >= 0.1,
+    syb >= 0.1,
+    filepath,
+    directory
+  ghc-options:
+    -fwarn-incomplete-patterns
+  Default-Extensions:     
+    FlexibleInstances TypeSynonymInstances DeriveDataTypeable
+  Exposed-Modules:
+    BrownPLT.Html
+    BrownPLT.Html.Syntax
+    BrownPLT.Html.PermissiveParser
+    BrownPLT.Html.PrettyPrint 
+    BrownPLT.Html.Instances
+    BrownPLT.Html.RawScript
+    BrownPLT.JavaScript.HtmlEmbedding 
+    BrownPLT.JavaScript.Crawl
+    BrownPLT.JavaScript 
+    BrownPLT.JavaScript.Instances
+    BrownPLT.JavaScript.Lexer 
+    BrownPLT.JavaScript.Parser
+    BrownPLT.JavaScript.PrettyPrint
+    BrownPLT.JavaScript.Syntax 
+    BrownPLT.JavaScript.Environment
+    BrownPLT.JavaScript.Contracts
+    BrownPLT.JavaScript.Contracts.Interface
+  Other-Modules:
+    Paths_flapjax_fixed
+    BrownPLT.JavaScript.Contracts.Parser
+    BrownPLT.JavaScript.Contracts.Types
+    BrownPLT.JavaScript.Contracts.Compiler
+    BrownPLT.JavaScript.Contracts.Template
+
+Executable jscc
+  default-language: Haskell98
+  Main-Is: Jscc.hs
+  Hs-Source-Dirs: JsContracts-0.5.3/jscc
+  Build-Depends:
+    base>=4 && < 5,
+    mtl >= 1.1.0.1,
+    parsec < 3.0.0, 
+    pretty >= 0.1,
+    containers >= 0.1,
+    syb >= 0.1,
+    directory, 
+    filepath >= 1.1.0.1,
+    flapjax-fixed
+ 
+Executable fxc
+  default-language: Haskell98
+  Main-Is: Fxc.hs
+  Hs-Source-Dirs:
+    flapjax/trunk/compiler/src
+
+  Build-Depends:
+    base >= 4 && < 5,
+    mtl >= 1.1.0.1,
+    parsec < 3.0.0,
+    pretty >= 0.1,
+    containers >= 0.1,
+    syb >= 0.1,
+    filepath >= 1.1.0.1,
+    random >= 1.0.0.1,
+    directory, 
+    xhtml,
+    flapjax-fixed
+  ghc-options:
+    -fwarn-incomplete-patterns
+  Default-Extensions: DeriveDataTypeable
+

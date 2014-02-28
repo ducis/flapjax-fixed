@@ -1,0 +1,26 @@
+Building
+========
+
+The Flapjax framework is built with:
+  + JavaScript Contract Compiler (jscc)
+
+The Flapjax website is built with:
+ + PLT Scheme 4.1.2 or higher
+ + GHC 6.10.1 or higher
+ + rsync
+ + make
+
+Build the website in stages:
+ 1. make fx
+ 2. make compiler
+ 3. make doc
+ 4. make website
+
+Web Browser Compatibility
+=========================
+
+Flapjax is designed to work on all major browsers. However, a program
+that uses Flapjax can use browser-specific features. We test our demos
+on all recent browsers and report results here:
+
+https://spreadsheets.google.com/spreadsheet/ccc?key=0AnDa4-StoEAkcF8wZFRkSVlEMjN1ZERhSV9tWmZCQkE&hl=en_US

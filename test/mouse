@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Catch Up</title>
+<script>
+var DELAY=100;
+</script>
+</head>
+<body id="body" style="text-align: center; margin: 0px; overflow: hidden;">
+<div id="mouse" style={! {color: '#000000', backgroundColor: '#'+(100000+timerB(10)%100000), position: 'absolute', left:mouseLeftB(document), top: mouseTopB(document),padding: '10px'} !} >
+the mouse
+</div>
+<div id="tail"
+style={! {color: '#FF0000',backgroundColor:'#000000',position: 'absolute', left:delayB(mouseLeftB(document), DELAY)+$('mouse').offsetWidth, top:delayB(mouseTopB(document),DELAY),padding:'10px'} !}>
+the tail
+</div>
+</body>
+</html>
