@@ -7,4 +7,4 @@ Flapjax   www.flapjax-lang.org  https://github.com/brownplt/flapjax
 
 JsContracts   http://hackage.haskell.org/package/JsContracts
 
-WebBits & WebBits-Html   https://github.com/brownplt/webbits-html    https://github.com/brownplt/webbits-html
+WebBits & WebBits-Html   https://github.com/brownplt/webbits    https://github.com/brownplt/webbits-html
